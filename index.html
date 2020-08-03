@@ -77,6 +77,84 @@
             </div>
         </div>
     </div>
+
+    <div id="Reserve" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="Number of Guests">Number of Guests</label>
+
+                            </div>
+                            <div class="col-sm-9">
+                               
+                                <input type="radio" id="Number of Guests" name="Number of Guests">
+                                <label for="Number of Guests">&nbsp;1</label>&nbsp;
+                                <input type="radio" id="Number of Guests" name="Number of Guests"> 
+                                <label for="Number of Guests">&nbsp;2</label>&nbsp;
+                                <input type="radio" id="Number of Guests" name="Number of Guests"> 
+                                <label for="Number of Guests">&nbsp;3</label>&nbsp;
+                                <input type="radio" id="Number of Guests" name="Number of Guests"> 
+                                <label for="Number of Guests">&nbsp;4</label>&nbsp;
+                                <input type="radio" id="Number of Guests" name="Number of Guests"> 
+                                <label for="Number of Guests">&nbsp;5</label>&nbsp;
+                                <input type="radio" id="Number of Guests" name="Number of Guests"> 
+                                <label for="Number of Guests">&nbsp;6</label>&nbsp;
+                              
+                                
+                            </div>  
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-sm-3">
+                               <label for="smoking">Section</label>
+                            </div>
+                            <div class="btn-group col-12 col-sm-9">
+                                <button type="submit" class="btn btn-success">Non-Smoking</button>
+                                <button type="submit" class="btn btn-danger">smoking</button>
+                           </div>
+                        </div> 
+
+                        <div class="form-group row">
+                            <label for="Date and Time" class=" col-12 col-sm-3 col-form-lebel">Date and Time</label>
+                            <div class= " col-12 col-sm-4">
+                                <input type="date" placeholder="DATE" id="Date and Time" name="Date and Time" class="form-control">
+                            </div>
+
+                            <div class="col-12 col-sm-4">
+                                <input type="time" placeholder="TIME" id="Date and Time" name="Date and Time" class="form-control">
+                            </div>
+                    
+                        </div>
+                       
+
+                       
+                        <div class="form-group row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button type="submit" class="btn btn-default">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                                
+                            </div>
+                            
+                                
+                            
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -88,7 +166,7 @@
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button class="btn btn-block btn-warning" data-toggle="tooltip" data-html="true" title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom" id="button">Reserve Table</button>
+                    <a class="btn btn-block btn-warning" data-toggle="modal" data-target="#Reserve"  href="#">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -199,11 +277,11 @@
         
         <div class="row row-content align-items-center">
             <div class="col-12 offset-sm-2 col-sm-8 ">
-                <div class="card">
+                <div class="card " >
                     <h3 class="card-header bg-warning text-white ">Reserve a Table</h3>
                     <div class="card-body">
                         <form action="">
-                            <div class="form-group row">
+                            <div class="form-group row"  >
                                 <div class="col-sm-3">
                                     <label for="Number of Guests">Number of Guests</label>
 
@@ -295,17 +373,17 @@
                 </div>
            </div>
         </div>
-    </footer>
+    </footer>                     
      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <script>
+     <!-- <script>
          $(document).ready(function(){
              $('[data-toggle="tooltip"]').tooltip();
 
          });
-     </script>
+     </script> -->
 
 
 </body>
